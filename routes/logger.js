@@ -1,4 +1,4 @@
-var Logger = require("../models/logger.model");
+var Logger = require("../models/Logger");
 const router = require("express").Router();
 
 router.get("/", async (req, res) => {
