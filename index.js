@@ -20,6 +20,7 @@ const sliderRoute = require("./routes/slider");
 const questionRoute = require("./routes/question");
 const conversationRoute = require("./routes/conversations");
 const messageRoute = require("./routes/messages");
+const loggerRoute = require("./routes/logger");
 //app allow and json conf
 dotenv.config();
 app.use(cors());
@@ -57,6 +58,7 @@ app.use("/api/slider", sliderRoute);
 app.use("/api/question", questionRoute);
 app.use("/api/conversations", conversationRoute);
 app.use("/api/messages", messageRoute);
+app.use("/api/logger", loggerRoute);
 //get images
 app.use("/images", express.static(path.join(__dirname, "routes/images")));
 //run at port
