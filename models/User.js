@@ -8,8 +8,10 @@ const UserSchema = new mongoose.Schema(
        mail:{type:String, required:true, unique:true},
        password:{type:String, required:true},
        company:{type:String, default:''},
+       //vergi no
        taxnum:{type:String, default:''},
        isBusinness:{type:Boolean, default:false},
+       isCompany:{type:Boolean, default:false},
        sector:{type:String, default:''},
        category:{type:String, default:''},
        sectorCity:{type:Array, default:''},
@@ -25,6 +27,14 @@ const UserSchema = new mongoose.Schema(
        ratingCount:{type:Number, default:0},
        about:{type:String, default:null},
        referances:{type:Array, default:''},
+       wallet:{type:String, default:''},
+       comments:{type:Array},
+       //tc no
+       citizenshipNumber:{type:String, default:''},
+       //sicil no
+       plateNumber:{type:String, default:''},
+       taxPlace:{type:String, default:''},
+
     },{timestamps: true}
 );
 

@@ -48,6 +48,10 @@ router.post("/register-business", async (req, res) => {
     sectorDistinct: req.body.sectorDistinct,
     worksDays: req.body.worksDays,
     worksHours: req.body.worksHours,
+    isCompany: req.body.isCompany,
+    wallet: req.body.wallet,
+    citizenshipNumber: req.body.citizenshipNumber,
+    taxPlace: req.body.taxPlace,
   });
   try {
     const savedUser = await newUser.save();

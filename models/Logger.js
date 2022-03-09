@@ -6,6 +6,7 @@ const LoggerSchema = new mongoose.Schema({
    logContent:{ type: String, default:''},
    img:{ type: String, default:''},
    logUser:{ type: String, default:''},
+   LogTo:{ type: String, default:''},
    logLevel:{ type: Number, default:''},
    
 }, {timestamps:true});
